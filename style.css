@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+}
+
+header {
+    height: 100vh;
+    padding: 36px 100px;
+    background-image: url(profile-photo-1.jpg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+
+
+
+
+}
+
+header nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    width: 90%;
+    z-index: 99;
+    gap: 100px;
+
+
+}
+
+header nav img {
+    height: 56px;
+    width: 56px;
+    object-fit: contain;
+    filter: invert(70%) sepia(96%) saturate(558%) hue-rotate(359deg) brightness(103%) contrast(106%);
+
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0px 20px;
+    color: white;
+    font-weight: bold;
+
+
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all ease 0.5s;
+    width: 0;
+    border: solid 0px #fec86a;
+
+
+
+}
+
+header nav ul li a:hover {
+    color: #fec86a;
+    transition: all ease 1s;
+    /* transition-delay: 0.5s; */
+    border: 0px 5px 0px 0px solid #fec86a;
+    /* border: 0.10em solid #fec86a; */
+    /* border-bottom: #fec86a;
+    transition: ; 
+    width:30px
+    white-space: nowrap; */
+
+}
+
+header nav ul li .active {
+    color: #fbfbfb;
+
+}
+
+header nav .search {
+    height: 48px;
+    width: 200px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+header nav .search input {
+    border: none;
+    background-color: transparent;
+    width: 80%;
+    color: black;
+    outline: none;
+}
+
+header nav .search input:focus {
+    border: none;
+    outline: none;
+}
+
+header nav .search input::placeholder {
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+header nav .search i {
+    color: #98999a;
+}
+
+.typing-container {
+    overflow: hidden;
+    border-right: 0.10em solid #fec86a;
+    color: #fec86a;
+    font-weight: bolder;
+    font-size: larger;
+    white-space: nowrap;
+    animation: typing 4s steps(20) forwards infinite;
+    width: 0;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+
+    to {
+        width: 20ch;
+    }
+}
+
+.college-link {
+    color: #fec86a;
+    text-decoration: none;
+}
+
+.college-link:hover {
+    /* transition-delay: 3s; */
+    font-size: 22px;
+    /* transition-delay: 2s; */
+    transition: 2s;
+}
+
+
+.landing {
+    display: flex;
+    height: 100vh;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing .intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing .intro h4 {
+    color: #fbfbfb;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 5vw;
+}
+
+.landing .intro h4 span {
+    color: #fec86a;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.landing .intro button {
+    height: 48px;
+    width: 110px;
+    color: black;
+    margin-top: 3vh;
+    margin-left: 15vw;
+    background-color: #fec86a;
+    border: 2px solid #fec86a;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bolder;
+    transition: all ease 0.5s;
+    text-decoration: none;
+    /* align-items: center; */
+    padding: 12px;
+
+}
+
+.landing .intro button:hover {
+    background-color: black;
+    color: #fec86a;
+}
+
+/* .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 50vh;
+}
+
+.socials .line {
+    background-color: #fec86a;
+    height: 15vh;
+    width: 2.5px;
+}
+
+.socials i {
+    color: #fbfbfb;
+    font-size: 36px;
+} */
+
+.about {
+    height: 50vh;
+    width: 100vw;
+    padding: 100px;
+}
+
+.about h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #fbfbfb;
+    font-family: "Libre Baskerville", serif;
+}
+
+.about .description {
+    display: grid;
+    align-items: start;
+    font-size: 20px;
+    gap: 30px;
+    color: white;
+    font-weight: bolder;
+    word-spacing: space-between;
+}
+
+.about .description .line {
+    height: 2.5px;
+    width: 400px;
+    background-color: #fec86a;
+    margin-right: 32px;
+}
+
+.about .description p {
+    color: #fbfbfb;
+    font-size: 20px;
+}
+
+.about .description p span {
+    color: #fec86a;
+}
+
+.about .description span a {
+    color: #fec86a;
+    text-decoration: none;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+    ;
+}
+
+.skills h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #fbfbfb;
+    font-family: "Libre Baskerville", serif;
+    padding-top: 20vh;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 2.5vh;
+}
+
+.skill-card {
+    height: 20vw;
+    width: 20vw;
+    background-color: #3d3e42;
+    border-radius: 20px;
+    color: #fec86f;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vh;
+    transition: all ease 0.5s;
+    border-radius: 50%;
+
+}
+
+.skill-card:hover {
+    background-color: #fec86a;
+    color: black;
+    font-size: larger;
+
+}
+
+.skill-card img {
+    height: 10vw;
+    width: 10vw;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.skill-card h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fbfbfb;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+}
+
+.portfolio h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #fbfbfb;
+    font-family: "Libre Baskerville", serif;
+}
+
+.portfolio-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 50px;
+    gap: 2.5vh;
+}
+
+.portfolio-card {
+    position: relative;
+    height: 30vw;
+    width: 30vw;
+    background-color: #3d3e42;
+    border-radius: 20px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vh;
+    transition: all ease 0.5s;
+}
+
+.portfolio-card img {
+    position: relative;
+    height: 30vw;
+    width: 30vw;
+    object-fit: cover;
+}
+
+.portfolio-card .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    height: 30vw;
+    width: 30vw;
+    background-color: #34353ba2;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.portfolio-card .overlay h3 {
+    color: #fbfbfb;
+    font-size: 24px;
+}
+
+.portfolio-card .overlay p {
+    color: #fbfbfb;
+    font-size: 16px;
+    text-align: center;
+}
+
+.portfolio-card .overlay button {
+    height: 36px;
+    width: 100px;
+    background-color: #fec86a;
+    border: 1px solid #fec86a;
+    border-radius: 8px;
+    color: #34353b;
+    font-size: 12px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.portfolio-card .overlay:hover {
+    opacity: 1;
+}
+
+.portfolio button {
+    margin-top: 50px;
+    height: 48px;
+    width: 220px;
+    background-color: #fec86a;
+    border: 1px solid #fec86a;
+    border-radius: 8px;
+    color: #34353b;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    font-weight: bold;
+}
+
+.portfolio button:hover {
+    background-color: #cc9e4e;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    width: 100vw;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.darker-div {
+    background-color: #34353a;
+    width: 100vw;
+    height: 10vh;
+}
+
+.experience h1 {
+    position: absolute;
+    color: #fbfbfb;
+    font-size: 56px;
+    font-family: "Libre Baskerville", serif;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 15%;
+}
+
+.lighter-div {
+    background-color: #3d3e42;
+    width: 100vw;
+    /* height: 90vh; */
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.lighter-div .exp {
+    height: 30vh;
+    width: 50vw;
+    position: relative;
+    margin-left: 20vh;
+}
+
+.exp h2 {
+    color: #fbfbfb;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.exp h2::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    color: #fec86a;
+    background-color: #fec86a;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 7.5%;
+    left: -5%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 5px #fec86a;
+}
+
+.exp-desc::before {
+    content: "";
+    height: 190px;
+    width: 2.5px;
+    background-color: #fbfbfb;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: -5%;
+}
+
+.exp-desc h3 {
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.exp-desc p {
+    color: #fbfbfb;
+    font-size: 16;
+    font-weight: 400;
+}
+
+.Contact {
+    width: 100vw;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contact h1 {
+    font-size: 56px;
+    color: #fbfbfb;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+}
+
+.Contact {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-card {
+    background-color: #fec86a;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    gap: 150px;
+    margin-top: 7.5vh;
+}
+
+.socials {
+    color: #fec86a;
+    list-style: none;
+    /* padding: 20px; */
+    display: flex;
+    gap: 100px;
+    font-weight: bold;
+
+
+}
+
+.social-card {
+    
+    border-radius: 8px;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+/* .social-card:hover {
+    background-color: #fec86a;
+
+
+} */
+
+.socials span {
+    color: #fec86a;
+}
+
+.socials span a {
+    text-decoration: none;
+}
+
+.socials img {
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.socials span:hover {
+
+    transition: 0.3s ease;
+    font-size: larger;
+   
+}
